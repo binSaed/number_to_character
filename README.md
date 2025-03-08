@@ -1,39 +1,43 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# number_to_character
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+this plugin is build to convert number to text
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+## Getting Started
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+This project is a starting point for a Flutter
+[plug-in package](https://flutter.dev/developing-packages/),
+a specialized package that includes platform-specific implementation code for
+Android and/or iOS.
 
-## Features
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-## Getting started
+# How to use
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+First instantiate
+```
+NumberToCharacterConverter('en')
+```
+inform the value parameter to choose tha language you want,
+```
+arabic => ar
+frensh => fr
+english => en
+spanish => es
 ```
 
-## Additional information
+Example:
+```
+var converter = NumberToCharacterConverter('en');
+converter.convertInt(99); // it shows ninety nine
+```
+OR
+```
+var converter = NumberToCharacterConverter('fr');
+converter.convertInt(99); // it shows quatre-vingt dix-neuf
+```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+# WHAT'S NEXT?
+add more languages
